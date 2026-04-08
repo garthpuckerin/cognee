@@ -10,6 +10,8 @@ jobs:
     uses: garthpuckerin/devops/.github/workflows/sync-fork.yml@main
     with:
       upstream: topoteretes/cognee
+    secrets:
+      SYNC_PAT: ${{ secrets.SYNC_PAT }}
     permissions:
       contents: write
       pull-requests: write
